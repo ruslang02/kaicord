@@ -1,10 +1,40 @@
+:root {
+	--blurple: #7289DA;
+	--black: #23272A;
+	--white: #FFFFFF;
+	--greyple: #99AAB5;
+	--dark: #2C2F33;
+}
+
+:root {
+	--tab-foreground-color: var(--white);
+	--tabs-background-color: var(--dark);
+	--tab-background-color: var(--dark);
+	--softkeybar-background-color: var(--black);
+	--softkey-color: var(--white);
+
+	color: var(--white);
+}
+
+$blurple: var(--blurple);
+$white: var(--white);
+$greyple: var(--greyple);
+$dark: var(--dark);
+$black: var(--black);
+
+:export {
+	blurple: $blurple;
+	white: $white;
+	greyple: $greyple;
+	dark: $dark;
+	black: $black;
+}
+
 html,
 body {
   height: 100%;
   margin: 0;
-}
-.App {
-  height: 100%;
+  background-color: $dark;
   overflow: hidden;
 }
 

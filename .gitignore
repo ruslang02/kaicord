@@ -22,3 +22,13 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+precache*
+service-worker.js
+manifest.json
+favicon.ico
+asset-manifest.json
+static/
+index.html
+manifest.webapp
+icons/
