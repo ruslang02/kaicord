@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import SwipeableViews from 'react-swipeable-views';
+// import SwipeableViews from 'react-swipeable-views';
 import Tabs from '../../components/Tabs/Tabs';
 import Tab from '../../components/Tab/Tab';
 import colors from '../../theme/colors.scss';
@@ -19,7 +19,7 @@ const TabView = React.memo(
     } = props;
 
     const [activeTab, setActiveTab] = useState(0);
-    const [isTransitionDone, setTransitionDone] = useState(true);
+    // const [isTransitionDone, setTransitionDone] = useState(true);
 
     const tabViewTabs = `${prefixCls}-tabs`;
     const tabViewContent = `${prefixCls}-content`;
@@ -27,12 +27,12 @@ const TabView = React.memo(
     const handleChangeIndex = tabIndex => {
       // NOTE: Ensure you set state for tab transition first.
       //       Otherwise you will face strange race condition bugs.
-      setTransitionDone(false);
+      // setTransitionDone(false);
       setActiveTab(tabIndex);
       onChangeIndex(tabIndex);
     };
 
-    const handleTransitionEnd = () => setTransitionDone(true);
+    // const handleTransitionEnd = () => setTransitionDone(true);
 
     const renderTabs = () => {
       return tabLabels.map((label, i) => {

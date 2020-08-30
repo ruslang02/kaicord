@@ -5,9 +5,7 @@ import TabView from './KaiUI/views/TabView/TabView';
 import ToastContext, { ToastContextProvider } from './KaiUI/contexts/ToastContext/ToastContext';
 import IconListItem from './KaiUI/components/IconListItem/IconListItem';
 import ListView from './KaiUI/views/ListView/ListView';
-import ProgressBar from './KaiUI/components/ProgressBar/ProgressBar';
 import TextInput from './KaiUI/components/TextInput/TextInput';
-import TextListItem from './KaiUI/components/TextListItem/TextListItem';
 import CheckboxListItem from './KaiUI/components/CheckboxListItem/CheckboxListItem';
 
 import style from './App.scss';
@@ -176,7 +174,7 @@ function ActualListView(props) {
 	return <ListView isActive={props.isActive}>{content}</ListView>
 }
 function Settings(props) {
-	const client = useContext(ClientContext);
+	// const client = useContext(ClientContext);
 
 	async function handleChange(e) {
 		if (navigator.getDataStores) {
